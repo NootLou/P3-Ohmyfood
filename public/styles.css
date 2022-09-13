@@ -7,6 +7,9 @@
   color: inherit;
   font-family: "Roboto", sans-serif;
 }
+* ul {
+  list-style: none;
+}
 
 body {
   margin: 0px;
@@ -188,6 +191,27 @@ body {
   }
   .restaurant-card__infos i {
     padding: 10px;
+  }
+  footer {
+    color: white;
+    background-color: #363636;
+    padding: 40px 0px;
+  }
+  footer h4 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 36px;
+    margin: 0px 5%;
+  }
+  footer ul {
+    margin: 20px 5%;
+  }
+  footer ul li {
+    padding: 10px;
+    font-size: 28px;
+  }
+  footer ul li i {
+    height: 20px;
+    width: 50px;
   }
 }
 

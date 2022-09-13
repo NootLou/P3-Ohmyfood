@@ -159,4 +159,27 @@
             }
         }
     }
+
+    footer{
+        color: white;
+        background-color: darken($color-background, 75%);
+        padding: 40px 0px;
+        h4{
+            font-family: $font-title;
+            font-size: 36px;
+            margin: 0px 5%;
+        }
+        ul{
+            margin: 20px 5%;
+            li{
+                padding: 10px;
+                font-size: 28px;
+                i{
+                    height: 20px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+
 }
