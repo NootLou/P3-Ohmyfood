@@ -3,7 +3,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 15px 0px 25px 0px;
+        padding: 50px 0px 30px 0px;
         box-shadow: 0px 6px 10px darken($color-background, 15%);
         img{
             width: 45%;
@@ -11,26 +11,49 @@
     }
 
     .research{
-            width: 100%;
-            margin-top: 6px;
-            background-color: darken($color-background, 5%);
-            &__form{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                i{
-                    color: lighten(black, 20%);
-                    padding: 30px;
+        width: 100%;
+        margin-top: 6px;
+        background-color: darken($color-background, 5%);
+        &__form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                color: lighten(black, 20%);
+                padding: 30px;
+            }
+            input{
+                height: 80px;
+                background-color: darken($color-background, 5%);
+                font-size: 28px;
+                border: none;
+                &:focus{
+                    outline: 0px;
                 }
-                input{
-                    height: 80px;
-                    background-color: darken($color-background, 5%);
-                    font-size: 28px;
-                    border: none;
-                    &:focus{
-                        outline: 0px;
-                    }
+                &::placeholder{
+                    color: lighten(black, 20%);
                 }
             }
         }
+    }
+
+    .explorer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        padding: 100px 0px;
+        &__title{
+            font-size: 48px;
+            width: 70%;
+        }
+        p{
+            width: 80%;
+            font-size: 32px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+    }
+
 }
