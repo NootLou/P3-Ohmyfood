@@ -1,0 +1,19 @@
+{
+  "name": "testvrai",
+  "version": "1.0.0",
+  "description": "Test P3",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/styles.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NootLou/TestVrai.git"
+  },
+  "author": "NootLou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NootLou/TestVrai/issues"
+  },
+  "homepage": "https://github.com/NootLou/TestVrai#readme"
+}
