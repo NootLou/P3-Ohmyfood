@@ -101,5 +101,62 @@
             }
         }
     }
-
+    .restaurant{
+        background-color: $color-background;
+        padding: 80px 0px;
+        h3{
+            font-size: 48px;
+            margin-left: 5%;
+            padding-bottom: 10px;
+        }
+        &-card{
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 40px;
+            height: 500px;
+            border-radius: 30px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 5px 15px rgb(221, 221, 221);
+            &__img{
+                height: 80%;
+                width: 100%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                span{
+                    position: relative;
+                    top: -90%;
+                    left: 78%;
+                    background-color: $color-tertiary;
+                    font-size: 24px;
+                    font-weight: 500;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    color: darken($color-tertiary, 40%);
+                }
+            }
+            &__infos{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 28px;
+                height: 20%;
+                width: 95%;
+                margin: 0px auto;
+                p{
+                    font-weight: 600;
+                    margin: 0px;
+                }
+                span{
+                    font-weight: 200;
+                }
+                i{
+                    padding: 10px;
+                }
+            }
+        }
+    }
 }

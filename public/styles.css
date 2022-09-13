@@ -2,6 +2,11 @@
   margin: 0px;
   padding: 0px;
 }
+* a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+}
 
 body {
   margin: 0px;
@@ -125,6 +130,64 @@ body {
   .functioning__card figcaption i {
     color: grey;
     margin-left: 20px;
+  }
+  .restaurant {
+    background-color: whitesmoke;
+    padding: 80px 0px;
+  }
+  .restaurant h3 {
+    font-size: 48px;
+    margin-left: 5%;
+    padding-bottom: 10px;
+  }
+  .restaurant-card {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgb(221, 221, 221);
+  }
+  .restaurant-card__img {
+    height: 80%;
+    width: 100%;
+  }
+  .restaurant-card__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .restaurant-card__img span {
+    position: relative;
+    top: -90%;
+    left: 78%;
+    background-color: #99E2D0;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #278870;
+  }
+  .restaurant-card__infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    height: 20%;
+    width: 95%;
+    margin: 0px auto;
+  }
+  .restaurant-card__infos p {
+    font-weight: 600;
+    margin: 0px;
+  }
+  .restaurant-card__infos span {
+    font-weight: 200;
+  }
+  .restaurant-card__infos i {
+    padding: 10px;
   }
 }
 
