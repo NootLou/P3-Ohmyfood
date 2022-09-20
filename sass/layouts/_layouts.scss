@@ -222,15 +222,12 @@
             }
         }
         &__entree{
-            @include plate-type;
             @include menu-card;
         }
         &__plate{
-            @include plate-type;
             @include menu-card;
         }
         &__dessert{
-            @include plate-type;
             @include menu-card;
         }
         .btn{

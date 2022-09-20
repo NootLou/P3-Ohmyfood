@@ -1,6 +1,6 @@
-// PAGES RESTAURANT
+// // PAGES RESTAURANT
 
-@mixin plate-type{
+@mixin menu-card {   
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -15,9 +15,6 @@
             padding: 10px 0px;
         }
     }
-}
-
-@mixin menu-card{
     figure{
         background-color: white;
         border-radius: 20px;
