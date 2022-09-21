@@ -277,6 +277,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     display: flex;
+    justify-content: space-between;
     box-shadow: 0px 5px 15px rgb(221, 221, 221);
     overflow: hidden;
   }
@@ -284,7 +285,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     padding: 0px 20px;
   }
   .menu__entree figure .plate h3 {
@@ -313,6 +314,10 @@ body {
   }
   .menu__entree figure .plate__check {
     width: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
     transition-property: width;
     transition-duration: 1.2s;
     transition-delay: 4ms;
@@ -329,12 +334,9 @@ body {
     width: 15%;
     height: 100%;
     background-color: #99E2D0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .menu__entree figure:hover .plate__check i {
-    transform: rotate(-720deg);
+    transform: rotate(-360deg);
   }
   .menu__plate {
     display: flex;
@@ -359,6 +361,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     display: flex;
+    justify-content: space-between;
     box-shadow: 0px 5px 15px rgb(221, 221, 221);
     overflow: hidden;
   }
@@ -366,7 +369,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     padding: 0px 20px;
   }
   .menu__plate figure .plate h3 {
@@ -395,6 +398,10 @@ body {
   }
   .menu__plate figure .plate__check {
     width: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
     transition-property: width;
     transition-duration: 1.2s;
     transition-delay: 4ms;
@@ -411,12 +418,9 @@ body {
     width: 15%;
     height: 100%;
     background-color: #99E2D0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .menu__plate figure:hover .plate__check i {
-    transform: rotate(-720deg);
+    transform: rotate(-360deg);
   }
   .menu__dessert {
     display: flex;
@@ -441,6 +445,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     display: flex;
+    justify-content: space-between;
     box-shadow: 0px 5px 15px rgb(221, 221, 221);
     overflow: hidden;
   }
@@ -448,7 +453,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     padding: 0px 20px;
   }
   .menu__dessert figure .plate h3 {
@@ -477,6 +482,10 @@ body {
   }
   .menu__dessert figure .plate__check {
     width: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
     transition-property: width;
     transition-duration: 1.2s;
     transition-delay: 4ms;
@@ -493,12 +502,9 @@ body {
     width: 15%;
     height: 100%;
     background-color: #99E2D0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .menu__dessert figure:hover .plate__check i {
-    transform: rotate(-720deg);
+    transform: rotate(-360deg);
   }
   .menu .btn {
     width: 50%;
