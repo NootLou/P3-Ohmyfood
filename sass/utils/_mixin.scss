@@ -7,7 +7,7 @@
     .plate-type{
         text-transform: uppercase;
         font-weight: 300;
-        font-size: 28px;
+        font-size: 24px;
         padding: 10px 0px;
         margin-bottom: 15px;
         span{
@@ -19,7 +19,7 @@
         background-color: white;
         border-radius: 20px;
         height: 100px;
-        font-size: 28px;
+        font-size: 18px;
         font-weight: 500;
         display: flex;
         box-shadow: 0px 5px 15px rgb(221, 221, 221);
@@ -30,31 +30,57 @@
             justify-content: center;
             width: 90%;
             padding: 0px 20px;
-            &__check{
-                display: none;
+            h3{
+            font-weight: 500;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 90%;
             }
-        }
-        figcaption{
-            font-weight: 300;
-            font-size: 24px;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 5px;
-            span{
-                font-weight: 500;
+            &__infos{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                min-width: 90%;
+                p{
+                    font-weight: 300;
+                    margin-top: 5px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                span{
+                    font-weight: 500;
+                    align-self: flex-end;
+                }
+            }
+            &__check{
+                width: 0%;
+                transition-property: width;
+                transition-duration: 1.2s;
+                transition-delay: 4ms;
+                i{
+                    color: white;
+                    height: fit-content;
+                    width: fit-content;
+                    transition-property: transform;
+                    transition-duration: 1.2s;
+                    transition-delay: 4ms;
+                }
             }
         }
         &:hover{
             .plate{
                 &__check{
-                display: contents;
-                width: 10%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                background-color: $color-tertiary;
-                color: white;
+                        width: 15%;
+                        height: 100%;
+                        background-color: $color-tertiary;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    i{ 
+                        transform: rotate(-720deg);
+                    }
                 }
             }
         }

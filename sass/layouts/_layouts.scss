@@ -212,13 +212,13 @@
         gap: 40px 0px;
         &__title{
             display: flex;
-            align-items: center;
+            align-items: baseline;
             justify-content: space-between;
             font-family: $font-title;
             font-size: 24px;
             padding: 60px 0px 0px 0px;
             h1{
-                font-size: 52px;
+                font-size: 36px;
             }
         }
         &__entree{

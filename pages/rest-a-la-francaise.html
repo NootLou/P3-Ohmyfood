@@ -22,7 +22,7 @@
         <img src="../images/logo/ohmyfood.png" alt="Logo de l'entreprise">
     </header>
     <main>
-        <div class="banner">
+        <div class="banner border">
             <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat du restaurant">
         </div>
         <div class="menu">
@@ -34,47 +34,21 @@
                 <h2 class="plate-type"><span>Entr</span>ées</h2>
                 <figure>
                     <div class="plate">
-                        <p>Tartare de poulpe acidulé</p>
-                        <figcaption>Aux zest d'orange<span>25€</span></figcaption>
+                        <h3>Tartare de poulpe acidulé</h3>
+                        <div class="plate__infos">
+                            <p >Aux zests d'orange</p><span>25€</span>
+                        </div>    
                     </div>
-                    <div class="plate__check">
+                    <div class="plate__check ">
                         <i class="fa-solid fa-circle-check fa-lg"></i>
                     </div>
                 </figure>
                 <figure>
                     <div class="plate">
-                        <p>Velouté de légumes d'antan</p>
-                        <figcaption>Carotte, panais, topinambour<span>35€</span></figcaption>
-                    </div>
-                    <div class="plate__check">
-                        <i class="fa-solid fa-circle-check fa-lg"></i>
-                    </div>    
-                </figure>
-                <figure>
-                    <div class="plate">
-                        <p>Soupe à l'oignon</p>
-                        <figcaption>Revisitée<span>20€</span></figcaption>
-                    </div>
-                    <div class="plate__check">
-                        <i class="fa-solid fa-circle-check fa-lg"></i>
-                    </div>
-                </figure>
-            </section>
-            <section class="menu__dessert">
-                <h3 class="plate-type"><span>Plat</span>s</h3>
-                <figure>
-                    <div class="plate">
-                        <p>Coquilles Saint-Jacques</p>
-                        <figcaption>Accompagnées d'une purée de panais<span>40€</span></figcaption>
-                    </div>
-                    <div class="plate__check">
-                        <i class="fa-solid fa-circle-check fa-lg"></i>
-                    </div>
-                </figure>
-                <figure>
-                    <div class="plate">
-                        <p>Magret de canard</p>
-                        <figcaption>Et parmentier de pommes de terres<span>35€</span></figcaption>
+                        <h3>Velouté de légumes d'antan</h3>
+                        <div class="plate__infos">
+                            <p>Carotte, panais, topinambour</p><span>35€</span>
+                        </div>
                     </div>
                     <div class="plate__check">
                         <i class="fa-solid fa-circle-check fa-lg"></i>
@@ -82,8 +56,10 @@
                 </figure>
                 <figure>
                     <div class="plate">
-                        <p>Pigeonneau d'Ille-et-Vilaine</p>
-                        <figcaption>Sur son lit de gnocchis aux légumes<span>44€</span></figcaption>
+                        <h3>Soupe à l'oignon</h3>
+                        <div class="plate__infos">
+                            <p>Revisitée</p><span>20€</span>
+                        </div>
                     </div>
                     <div class="plate__check">
                         <i class="fa-solid fa-circle-check fa-lg"></i>
@@ -91,11 +67,11 @@
                 </figure>
             </section>
             <section class="menu__plate">
-                <h4 class="plate-type"><span>Dess</span>erts</h4>
+                <h2 class="plate-type"><span>Plat</span>s</h2>
                 <figure>
                     <div class="plate">
-                        <p>Pétales de violettes glacées</p>
-                        <figcaption>Et purée de noisettes<span>18€</span></figcaption>
+                        <h3>Coquilles Saint-Jacques</h3>
+                        <p>Accompagnées d'une purée de panais<span>40€</span></p>
                     </div>
                     <div class="plate__check">
                         <i class="fa-solid fa-circle-check fa-lg"></i>
@@ -103,8 +79,8 @@
                 </figure>
                 <figure>
                     <div class="plate">
-                        <p>Fondant au chocolat</p>
-                        <figcaption>Revisité<span>22€</span></figcaption>
+                        <h3>Magret de canard</h3>
+                        <p>Et parmentier de pommes de terres<span>35€</span></p>
                     </div>
                     <div class="plate__check">
                         <i class="fa-solid fa-circle-check fa-lg"></i>
@@ -112,8 +88,38 @@
                 </figure>
                 <figure>
                     <div class="plate">
-                        <p>Millefeuille croustillant</p>
-                        <figcaption>Myrtilles et pâte d'amande<span>23€</span></figcaption>
+                        <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                        <p>Sur son lit de gnocchis aux légumes<span>44€</span></p>
+                    </div>
+                    <div class="plate__check">
+                        <i class="fa-solid fa-circle-check fa-lg"></i>
+                    </div>
+                </figure>
+            </section>
+            <section class="menu__dessert">
+                <h2 class="plate-type"><span>Dess</span>erts</h2>
+                <figure>
+                    <div class="plate">
+                        <h3>Pétales de violettes glacées</h3>
+                        <p>Et purée de noisettes<span>18€</span></p>
+                    </div>
+                    <div class="plate__check">
+                        <i class="fa-solid fa-circle-check fa-lg"></i>
+                    </div>
+                </figure>
+                <figure>
+                    <div class="plate">
+                        <h3>Fondant au chocolat</h3>
+                        <p>Revisité<span>22€</span></p>
+                    </div>
+                    <div class="plate__check">
+                        <i class="fa-solid fa-circle-check fa-lg"></i>
+                    </div>    
+                </figure>
+                <figure>
+                    <div class="plate">
+                        <h3>Millefeuille croustillant</h3>
+                        <p>Myrtilles et pâte d'amande<span>23€</span></p>
                     </div>
                     <div class="plate__check">
                         <i class="fa-solid fa-circle-check fa-lg"></i>

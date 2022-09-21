@@ -245,14 +245,14 @@ body {
   }
   .menu__title {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     font-family: "Shrikhand", sans-serif;
     font-size: 24px;
     padding: 60px 0px 0px 0px;
   }
   .menu__title h1 {
-    font-size: 52px;
+    font-size: 36px;
   }
   .menu__entree {
     display: flex;
@@ -262,7 +262,7 @@ body {
   .menu__entree .plate-type {
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 24px;
     padding: 10px 0px;
     margin-bottom: 15px;
   }
@@ -274,7 +274,7 @@ body {
     background-color: white;
     border-radius: 20px;
     height: 100px;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 500;
     display: flex;
     box-shadow: 0px 5px 15px rgb(221, 221, 221);
@@ -287,28 +287,54 @@ body {
     width: 90%;
     padding: 0px 20px;
   }
-  .menu__entree figure .plate__check {
-    display: none;
+  .menu__entree figure .plate h3 {
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 90%;
   }
-  .menu__entree figure figcaption {
-    font-weight: 300;
-    font-size: 24px;
+  .menu__entree figure .plate__infos {
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    width: 100%;
+    min-width: 90%;
   }
-  .menu__entree figure figcaption span {
+  .menu__entree figure .plate__infos p {
+    font-weight: 300;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .menu__entree figure .plate__infos span {
     font-weight: 500;
+    align-self: flex-end;
+  }
+  .menu__entree figure .plate__check {
+    width: 0%;
+    transition-property: width;
+    transition-duration: 1.2s;
+    transition-delay: 4ms;
+  }
+  .menu__entree figure .plate__check i {
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    transition-property: transform;
+    transition-duration: 1.2s;
+    transition-delay: 4ms;
   }
   .menu__entree figure:hover .plate__check {
-    display: contents;
-    width: 10%;
+    width: 15%;
+    height: 100%;
+    background-color: #99E2D0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    background-color: #99E2D0;
-    color: white;
+  }
+  .menu__entree figure:hover .plate__check i {
+    transform: rotate(-720deg);
   }
   .menu__plate {
     display: flex;
@@ -318,7 +344,7 @@ body {
   .menu__plate .plate-type {
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 24px;
     padding: 10px 0px;
     margin-bottom: 15px;
   }
@@ -330,7 +356,7 @@ body {
     background-color: white;
     border-radius: 20px;
     height: 100px;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 500;
     display: flex;
     box-shadow: 0px 5px 15px rgb(221, 221, 221);
@@ -343,28 +369,54 @@ body {
     width: 90%;
     padding: 0px 20px;
   }
-  .menu__plate figure .plate__check {
-    display: none;
+  .menu__plate figure .plate h3 {
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 90%;
   }
-  .menu__plate figure figcaption {
-    font-weight: 300;
-    font-size: 24px;
+  .menu__plate figure .plate__infos {
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    width: 100%;
+    min-width: 90%;
   }
-  .menu__plate figure figcaption span {
+  .menu__plate figure .plate__infos p {
+    font-weight: 300;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .menu__plate figure .plate__infos span {
     font-weight: 500;
+    align-self: flex-end;
+  }
+  .menu__plate figure .plate__check {
+    width: 0%;
+    transition-property: width;
+    transition-duration: 1.2s;
+    transition-delay: 4ms;
+  }
+  .menu__plate figure .plate__check i {
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    transition-property: transform;
+    transition-duration: 1.2s;
+    transition-delay: 4ms;
   }
   .menu__plate figure:hover .plate__check {
-    display: contents;
-    width: 10%;
+    width: 15%;
+    height: 100%;
+    background-color: #99E2D0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    background-color: #99E2D0;
-    color: white;
+  }
+  .menu__plate figure:hover .plate__check i {
+    transform: rotate(-720deg);
   }
   .menu__dessert {
     display: flex;
@@ -374,7 +426,7 @@ body {
   .menu__dessert .plate-type {
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 24px;
     padding: 10px 0px;
     margin-bottom: 15px;
   }
@@ -386,7 +438,7 @@ body {
     background-color: white;
     border-radius: 20px;
     height: 100px;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 500;
     display: flex;
     box-shadow: 0px 5px 15px rgb(221, 221, 221);
@@ -399,28 +451,54 @@ body {
     width: 90%;
     padding: 0px 20px;
   }
-  .menu__dessert figure .plate__check {
-    display: none;
+  .menu__dessert figure .plate h3 {
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 90%;
   }
-  .menu__dessert figure figcaption {
-    font-weight: 300;
-    font-size: 24px;
+  .menu__dessert figure .plate__infos {
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    width: 100%;
+    min-width: 90%;
   }
-  .menu__dessert figure figcaption span {
+  .menu__dessert figure .plate__infos p {
+    font-weight: 300;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .menu__dessert figure .plate__infos span {
     font-weight: 500;
+    align-self: flex-end;
+  }
+  .menu__dessert figure .plate__check {
+    width: 0%;
+    transition-property: width;
+    transition-duration: 1.2s;
+    transition-delay: 4ms;
+  }
+  .menu__dessert figure .plate__check i {
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    transition-property: transform;
+    transition-duration: 1.2s;
+    transition-delay: 4ms;
   }
   .menu__dessert figure:hover .plate__check {
-    display: contents;
-    width: 10%;
+    width: 15%;
+    height: 100%;
+    background-color: #99E2D0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    background-color: #99E2D0;
-    color: white;
+  }
+  .menu__dessert figure:hover .plate__check i {
+    transform: rotate(-720deg);
   }
   .menu .btn {
     width: 50%;
