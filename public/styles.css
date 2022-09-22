@@ -314,13 +314,14 @@ body {
   }
   .menu__entree figure .plate__check {
     width: 0%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #99E2D0;
-    transition-property: width;
-    transition-duration: 1.2s;
-    transition-delay: 4ms;
+    transform: translateX(110px);
+    transition: all 1.2s ease-out;
+    transition-delay: 2ms;
   }
   .menu__entree figure .plate__check i {
     color: white;
@@ -332,11 +333,10 @@ body {
   }
   .menu__entree figure:hover .plate__check {
     width: 20%;
-    height: 100%;
-    background-color: #99E2D0;
+    transform: translateX(0px);
   }
   .menu__entree figure:hover .plate__check i {
-    transform: rotate(-360deg);
+    transform: rotate(-720deg);
   }
   .menu__plate {
     display: flex;
@@ -398,13 +398,14 @@ body {
   }
   .menu__plate figure .plate__check {
     width: 0%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #99E2D0;
-    transition-property: width;
-    transition-duration: 1.2s;
-    transition-delay: 4ms;
+    transform: translateX(110px);
+    transition: all 1.2s ease-out;
+    transition-delay: 2ms;
   }
   .menu__plate figure .plate__check i {
     color: white;
@@ -416,11 +417,10 @@ body {
   }
   .menu__plate figure:hover .plate__check {
     width: 20%;
-    height: 100%;
-    background-color: #99E2D0;
+    transform: translateX(0px);
   }
   .menu__plate figure:hover .plate__check i {
-    transform: rotate(-360deg);
+    transform: rotate(-720deg);
   }
   .menu__dessert {
     display: flex;
@@ -482,13 +482,14 @@ body {
   }
   .menu__dessert figure .plate__check {
     width: 0%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #99E2D0;
-    transition-property: width;
-    transition-duration: 1.2s;
-    transition-delay: 4ms;
+    transform: translateX(110px);
+    transition: all 1.2s ease-out;
+    transition-delay: 2ms;
   }
   .menu__dessert figure .plate__check i {
     color: white;
@@ -500,11 +501,10 @@ body {
   }
   .menu__dessert figure:hover .plate__check {
     width: 20%;
-    height: 100%;
-    background-color: #99E2D0;
+    transform: translateX(0px);
   }
   .menu__dessert figure:hover .plate__check i {
-    transform: rotate(-360deg);
+    transform: rotate(-720deg);
   }
   .menu .btn {
     width: 50%;

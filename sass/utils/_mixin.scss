@@ -57,13 +57,14 @@
             }
             &__check{
                 width: 0%;
+                height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background-color: $color-tertiary;
-                transition-property: width;
-                transition-duration: 1.2s;
-                transition-delay: 4ms;
+                transform: translateX(110px);
+                transition: all 1.2s ease-out;
+                transition-delay: 2ms;
                 i{
                     color: white;
                     height: fit-content;
@@ -78,10 +79,9 @@
             .plate{               
                 &__check{
                     width: 20%;
-                    height: 100%;
-                    background-color: $color-tertiary;
+                    transform: translateX(0px);
                     i{ 
-                        transform: rotate(-360deg);
+                        transform: rotate(-720deg);
                     }
                 }
             }
