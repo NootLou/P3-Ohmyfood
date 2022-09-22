@@ -193,15 +193,28 @@ body {
     width: 95%;
     margin: 0px auto;
   }
-  .restaurant-card__infos p {
+  .restaurant-card__infos h4 {
     font-weight: 600;
     margin: 0px;
   }
-  .restaurant-card__infos span {
+  .restaurant-card__infos p {
     font-weight: 200;
   }
-  .restaurant-card__infos i {
-    padding: 10px;
+  .restaurant-card__infos span i {
+    font-size: 40px;
+  }
+  .restaurant-card__infos span .hidden {
+    background: rgb(255, 121, 218);
+    background: linear-gradient(5deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0%;
+    transition: opacity 1.2s ease-in-out;
+    transition-delay: 4ms;
+  }
+  .restaurant-card__infos span:hover .hidden {
+    opacity: 100%;
   }
   footer {
     color: white;
@@ -253,6 +266,19 @@ body {
   }
   .menu__title h1 {
     font-size: 36px;
+  }
+  .menu__title span .hidden {
+    background: rgb(255, 121, 218);
+    background: linear-gradient(5deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0%;
+    transition: opacity 1.2s ease-in-out;
+    transition-delay: 4ms;
+  }
+  .menu__title span:hover .hidden {
+    opacity: 100%;
   }
   .menu__entree {
     display: flex;
@@ -313,7 +339,7 @@ body {
     align-self: flex-end;
   }
   .menu__entree figure .plate__check {
-    width: 0%;
+    width: 5%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -397,7 +423,7 @@ body {
     align-self: flex-end;
   }
   .menu__plate figure .plate__check {
-    width: 0%;
+    width: 5%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -481,7 +507,7 @@ body {
     align-self: flex-end;
   }
   .menu__dessert figure .plate__check {
-    width: 0%;
+    width: 5%;
     height: 100%;
     display: flex;
     align-items: center;
