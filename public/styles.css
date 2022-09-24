@@ -8,9 +8,11 @@
 }
 @keyframes apparition-card {
   0% {
+    transform: scaleY(0%);
     opacity: 0%;
   }
   100% {
+    transform: scaleY(100%);
     opacity: 100%;
   }
 }
@@ -361,10 +363,11 @@ body {
     padding: 10px 0px;
   }
   .menu__entree figure {
+    transform-origin: 50% 0%;
     animation-name: apparition-card;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-delay: 2ms;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     background-color: white;
     border-radius: 20px;
     height: 100px;
@@ -460,10 +463,11 @@ body {
     padding: 10px 0px;
   }
   .menu__plate figure {
+    transform-origin: 50% 0%;
     animation-name: apparition-card;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-delay: 2ms;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     background-color: white;
     border-radius: 20px;
     height: 100px;
@@ -560,10 +564,11 @@ body {
     padding: 10px 0px;
   }
   .menu__dessert figure {
+    transform-origin: 50% 0%;
     animation-name: apparition-card;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-delay: 2ms;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     background-color: white;
     border-radius: 20px;
     height: 100px;

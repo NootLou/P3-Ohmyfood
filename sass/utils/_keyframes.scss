@@ -9,9 +9,11 @@
 
 @keyframes apparition-card{
     0%{
+        transform: scaleY(0%);
         opacity: 0%;
     }
     100%{
+        transform: scaleY(100%);
         opacity: 100%;
     }
 }
