@@ -1,3 +1,11 @@
+@keyframes rotate-check {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-720deg);
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -393,9 +401,6 @@ body {
     height: fit-content;
     width: fit-content;
     padding: 20px;
-    transition-property: transform;
-    transition-duration: 1.2s;
-    transition-delay: 1ms;
   }
   .menu__entree figure:hover .plate {
     width: 75%;
@@ -408,7 +413,8 @@ body {
     transform: translateX(0px);
   }
   .menu__entree figure:hover .plate__check i {
-    transform: rotate(-720deg);
+    animation-name: rotate-check;
+    animation-duration: 1.2s;
   }
   .menu__plate {
     display: flex;
@@ -490,9 +496,6 @@ body {
     height: fit-content;
     width: fit-content;
     padding: 20px;
-    transition-property: transform;
-    transition-duration: 1.2s;
-    transition-delay: 1ms;
   }
   .menu__plate figure:hover .plate {
     width: 75%;
@@ -505,7 +508,8 @@ body {
     transform: translateX(0px);
   }
   .menu__plate figure:hover .plate__check i {
-    transform: rotate(-720deg);
+    animation-name: rotate-check;
+    animation-duration: 1.2s;
   }
   .menu__dessert {
     display: flex;
@@ -588,9 +592,6 @@ body {
     height: fit-content;
     width: fit-content;
     padding: 20px;
-    transition-property: transform;
-    transition-duration: 1.2s;
-    transition-delay: 1ms;
   }
   .menu__dessert figure:hover .plate {
     width: 75%;
@@ -603,7 +604,8 @@ body {
     transform: translateX(0px);
   }
   .menu__dessert figure:hover .plate__check i {
-    transform: rotate(-720deg);
+    animation-name: rotate-check;
+    animation-duration: 1.2s;
   }
 }
 

@@ -77,16 +77,12 @@
                     height: fit-content;
                     width: fit-content;
                     padding: 20px;
-                    transition-property: transform;
-                    transition-duration: 1.2s;
-                    transition-delay: 1ms;
                 }
             }
         }
         &:hover{
             .plate{     
                 width: 75%;
-                // min-width: 60%;
                 &__infos{
                     p{
                         width: 90%;
@@ -96,7 +92,8 @@
                     width: 20%;
                     transform: translateX(0px);
                     i{ 
-                        transform: rotate(-720deg);
+                        animation-name: rotate-check;
+                        animation-duration: 1.2s;
                     }
                 }
             }
