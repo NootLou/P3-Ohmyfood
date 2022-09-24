@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-
     .plate-type{
         text-transform: uppercase;
         font-weight: 300;
@@ -17,6 +16,10 @@
         }
     }
     figure{
+        animation-name: apparition-card;
+        animation-duration: 3s;
+        animation-delay: 2ms;
+        animation-timing-function: ease-in;
         background-color: white;
         border-radius: 20px;
         height: 100px;

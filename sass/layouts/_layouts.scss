@@ -6,20 +6,21 @@
         justify-content: center;
         padding: 50px 0px 30px 0px;
         box-shadow: 0px 6px 10px darken($color-background, 15%);
+        position: relative;
         img{
             width: 45%;
         }
         i{
             position: absolute;
-            top: 60px;
-            left: 5%;
+            top: 45%;
+            left: 2%;
+            padding: 0px 20px;
             color: lighten(black, 20%);
         }
     }
 
     .research{
         width: 100%;
-        margin-top: 6px;
         background-color: darken($color-background, 5%);
         &__form{
             display: flex;
