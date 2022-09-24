@@ -14,9 +14,25 @@
     font-size: 18px;
     color: white;
     box-shadow: 0px 8px 10px darken($color-background, 20%);
+    position: relative;
+    z-index: 1;
     &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
         background: rgb(255,121,218);
         background: linear-gradient(170deg, lighten(rgba(255,121,218,1), 2%) 0%, lighten(rgba(147,86,220,1), 2%) 100%);
         box-shadow: 0px 8px 10px darken($color-background, 35%);
+        border-radius: 50px;
+        opacity: 0;
+        z-index: -1;
     }
 }
