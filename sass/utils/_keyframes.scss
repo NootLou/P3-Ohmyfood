@@ -1,23 +1,4 @@
-@keyframes rotate-check{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(-720deg);
-    }
-}
-
-@keyframes apparition-card{
-    0%{
-        transform: scaleY(0%);
-        opacity: 0%;
-    }
-    100%{
-        transform: scaleY(100%);
-        opacity: 100%;
-    }
-}
-
+// PAGE D'ACCUEIL
 @keyframes loader-apparition{
     0%{
         opacity: 100%;
@@ -39,5 +20,60 @@
     }
     100%{
         transform: rotate(1080deg);
+    }
+}
+
+// PAGE RESTAURANT
+@keyframes rotate-check{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-720deg);
+    }
+}
+
+@keyframes apparition-card-1{
+    0%{
+        // transform: scaleY(0%);
+        opacity: 0%;
+    }
+    33%{
+        opacity: 100%;
+    }
+    100%{
+        // transform: scaleY(100%);
+        opacity: 100%;
+    }
+}
+
+@keyframes apparition-card-2{
+    0%{
+        // transform: scaleY(0%);
+        opacity: 0%;
+    }
+    25%{
+        opacity: 0%;
+    }
+    66%{
+        opacity: 100%;
+    }
+    100%{
+        // transform: scaleY(100%);
+        opacity: 100%;
+    }
+}
+
+@keyframes apparition-card-3{
+    0%{
+        // transform: scaleY(0%);
+        opacity: 0%;
+    }
+    55%{
+        opacity: 0%;
+    }
+    100%{
+        // transform: scaleY(100%);
+        opacity: 100%;
     }
 }
