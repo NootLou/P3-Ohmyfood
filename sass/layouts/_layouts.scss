@@ -215,6 +215,7 @@
                 span{
                     position: relative;
                     top: -5px;
+                    right: -20px;
                     i{
                         font-size: 28px;
                     }
@@ -227,7 +228,8 @@
     footer{
         color: white;
         background-color: darken($color-background, 75%);
-        padding: 20px 0px;
+        padding-top: 30px;
+        padding-bottom: 40px;
         .footer__title{
             font-family: $font-title;
             font-size: 18px;
@@ -235,7 +237,7 @@
         }
         ul{
             margin: 0 5%;
-            margin-top: 10px;
+            margin-top: 20px;
             li{
                 padding: 5px;
                 font-size: 16px;

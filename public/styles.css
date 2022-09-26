@@ -32,10 +32,7 @@
   0% {
     opacity: 0%;
   }
-  33% {
-    opacity: 100%;
-  }
-  100% {
+  25% {
     opacity: 100%;
   }
 }
@@ -43,13 +40,10 @@
   0% {
     opacity: 0%;
   }
-  25% {
+  20% {
     opacity: 0%;
   }
-  66% {
-    opacity: 100%;
-  }
-  100% {
+  50% {
     opacity: 100%;
   }
 }
@@ -57,7 +51,18 @@
   0% {
     opacity: 0%;
   }
-  55% {
+  45% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 100%;
+  }
+}
+@keyframes apparition-card-4 {
+  0% {
+    opacity: 0%;
+  }
+  70% {
     opacity: 0%;
   }
   100% {
@@ -317,6 +322,7 @@ body {
   .restaurant-card__infos span {
     position: relative;
     top: -5px;
+    right: -20px;
   }
   .restaurant-card__infos span i {
     font-size: 28px;
@@ -337,7 +343,8 @@ body {
   footer {
     color: white;
     background-color: #363636;
-    padding: 20px 0px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
   footer .footer__title {
     font-family: "Shrikhand", sans-serif;
@@ -346,7 +353,7 @@ body {
   }
   footer ul {
     margin: 0 5%;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   footer ul li {
     padding: 5px;
@@ -450,6 +457,13 @@ body {
     animation-delay: 400ms;
     animation-timing-function: ease-in-out;
   }
+  .menu__entree .plate-box figure:nth-child(4) {
+    transform-origin: 50% 0%;
+    animation-name: apparition-card-4;
+    animation-duration: 1s;
+    animation-delay: 400ms;
+    animation-timing-function: ease-in-out;
+  }
   .menu__entree .plate-box figure {
     background-color: white;
     border-radius: 20px;
@@ -472,7 +486,6 @@ body {
   }
   .menu__entree .plate-box figure .plate h3 {
     font-weight: 500;
-    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     width: fit-content;
@@ -566,6 +579,13 @@ body {
     animation-delay: 400ms;
     animation-timing-function: ease-in-out;
   }
+  .menu__plate .plate-box figure:nth-child(4) {
+    transform-origin: 50% 0%;
+    animation-name: apparition-card-4;
+    animation-duration: 1s;
+    animation-delay: 400ms;
+    animation-timing-function: ease-in-out;
+  }
   .menu__plate .plate-box figure {
     background-color: white;
     border-radius: 20px;
@@ -588,7 +608,6 @@ body {
   }
   .menu__plate .plate-box figure .plate h3 {
     font-weight: 500;
-    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     width: fit-content;
@@ -685,6 +704,13 @@ body {
     animation-delay: 400ms;
     animation-timing-function: ease-in-out;
   }
+  .menu__dessert .plate-box figure:nth-child(4) {
+    transform-origin: 50% 0%;
+    animation-name: apparition-card-4;
+    animation-duration: 1s;
+    animation-delay: 400ms;
+    animation-timing-function: ease-in-out;
+  }
   .menu__dessert .plate-box figure {
     background-color: white;
     border-radius: 20px;
@@ -707,7 +733,6 @@ body {
   }
   .menu__dessert .plate-box figure .plate h3 {
     font-weight: 500;
-    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     width: fit-content;
