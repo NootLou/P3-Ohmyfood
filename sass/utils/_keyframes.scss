@@ -17,3 +17,27 @@
         opacity: 100%;
     }
 }
+
+@keyframes loader-apparition{
+    0%{
+        opacity: 100%;
+        z-index: 2;
+    }
+    99%{
+        opacity: 100%;
+        z-index: 2;
+    }
+    100%{
+        opacity: 0%;
+        z-index: -1;
+    }
+}
+
+@keyframes loader-spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(1080deg);
+    }
+}

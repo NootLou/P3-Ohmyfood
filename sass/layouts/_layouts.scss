@@ -1,5 +1,44 @@
 @media only screen and (max-width: 768px){
     // PAGES ACCUEIL + HEADER/FOOTER
+    // body{
+    //     position: relative;
+    //     &::after{
+    //         content: "";
+    //         height: 100%;
+    //         width: 100%;
+    //         background-color: $color-background;
+    //         opacity: 100%;
+    //         position: absolute;
+    //         top: 0px;
+    //         bottom: 0px;
+    //         right: 0px;
+    //         left: 0px;
+    //         z-index: 2;
+    //         animation-name: loader-apparition;
+    //         animation-duration: 3s;
+    //         display: none;
+    //     }
+    // }
+    .loader{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background-color: $color-background;
+        z-index: -1;
+        opacity: 0%;
+        animation: loader-apparition 3s;
+        i{
+            width: fit-content;
+            height: fit-content;    
+            transform-origin: 50% 50%;
+            position: relative;
+            top: 300px;
+            animation: loader-spinner 3s linear;
+        }        
+    }
+
     header{
         width: 100%;
         display: flex;
