@@ -49,34 +49,34 @@
             background-color: white;
             border-radius: 20px;
             height: 80px;
+            padding-left: 20px;
             font-size: 14px;
             font-weight: 500;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             box-shadow: 0px 5px 15px rgb(221, 221, 221);
             overflow: hidden;
             .plate{
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 width: 100%;
-                padding: 0px 10px 0px 20px;
                 transition: width 1.2s ease-out;
                 transition-delay: 4ms;
-                h3{
-                    font-weight: 500;
-                    // white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    width: fit-content;
-                }
+                padding: 0px;
                 &__infos{
                     display: flex;
-                    justify-content: space-between;
+                    flex-direction: column;
+                    justify-content: center;
                     width: 100%;
                     min-width: 80%;
+                    h3{
+                        font-weight: 500;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
                     p{
-                        width: fit-content;
                         font-weight: 300;
                         margin-top: 5px;
                         white-space: nowrap;
@@ -85,14 +85,15 @@
                         transition: width 1.2s ease-out;
                         transition-delay: 4ms;
                     }
-                    span{
-                        margin: 0px;
-                        font-weight: 500;
-                        align-self: flex-end;
-                    }
+                }
+                span{
+                    margin-top: 8px;
+                    padding-right: 20px;
+                    padding-left: 10px;
+                    font-weight: 500;
                 }
                 &__check{
-                    width: 5%;
+                    width: 0%;
                     height: 100%;
                     display: flex;
                     align-items: center;
@@ -111,12 +112,7 @@
             }
             &:hover{
                 .plate{     
-                    width: 75%;
-                    &__infos{
-                        p{
-                            width: 90%;
-                        }
-                    }          
+                    width: 80%;       
                     &__check{
                         width: 20%;
                         transform: translateX(0px);
