@@ -130,19 +130,24 @@
 // ANIMATIONS
 
 @mixin animation-heart{
-    .hidden{
-        background: rgb(255,121,218);
-        background: linear-gradient(5deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        opacity: 0%;
-        transition: opacity 1.2s ease-in-out;
-        transition-delay: 4ms;
-    }
-    &:hover{
-        .hidden{
-            opacity: 100%;
+    .fa-solid{
+        &.fa-heart{
+            transform-origin: bottom;
+            background: rgb(255,121,218);
+            background: linear-gradient(170deg, lighten(rgba(255,121,218,1), 2%) 0%, lighten(rgba(147,86,220,1), 2%) 100%);
+            background-clip:text;
+            -webkit-background-clip:text;
+            color:transparent;
+            opacity: 0;
         }
     }
+    &:hover{
+        .fa-solid.fa-heart{
+            opacity: 1;
+            animation-name: heart-progress;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+        }
+    }
+
 }

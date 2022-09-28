@@ -20,6 +20,17 @@
     transform: rotate(1080deg);
   }
 }
+@keyframes heart-progress {
+  0% {
+    transform: scale(0, 0);
+  }
+  20% {
+    transform: scale(0, 0.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 @keyframes rotate-check {
   from {
     transform: rotate(0deg);
@@ -314,9 +325,9 @@ header i {
   justify-content: space-between;
   align-items: center;
   font-size: 28px;
-  height: 30%;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
+  margin-top: 10px;
 }
 .restaurant-card__infos h4 {
   font-size: 18px;
@@ -328,25 +339,27 @@ header i {
   font-weight: 300;
 }
 .restaurant-card__infos span {
-  position: relative;
-  top: -5px;
-  right: -20px;
+  width: 30px;
+  display: flex;
+  align-items: center;
 }
-.restaurant-card__infos span i {
-  font-size: 28px;
-}
-.restaurant-card__infos span .hidden {
+.restaurant-card__infos span .fa-solid.fa-heart {
+  transform-origin: bottom;
   background: rgb(255, 121, 218);
-  background: linear-gradient(5deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  background: linear-gradient(170deg, #ff83dd 0%, #985ede 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  opacity: 0%;
-  transition: opacity 1.2s ease-in-out;
-  transition-delay: 4ms;
+  opacity: 0;
 }
-.restaurant-card__infos span:hover .hidden {
-  opacity: 100%;
+.restaurant-card__infos span:hover .fa-solid.fa-heart {
+  opacity: 1;
+  animation-name: heart-progress;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.restaurant-card__infos span i {
+  font-size: 28px;
 }
 
 footer {
@@ -403,34 +416,39 @@ footer ul li i {
 }
 .menu__title {
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
   font-family: "Shrikhand", sans-serif;
   font-size: 24px;
-  padding: 20px 0px 0px 0px;
+  margin-top: 40px;
 }
 .menu__title h1 {
   font-size: 28px;
+  height: fit-content;
+  align-self: end;
 }
 .menu__title span {
+  width: 30px;
   display: flex;
-  align-items: end;
+  align-items: center;
+  justify-content: end;
 }
-.menu__title span i {
-  font-size: 28px;
-}
-.menu__title span .hidden {
+.menu__title span .fa-solid.fa-heart {
+  transform-origin: bottom;
   background: rgb(255, 121, 218);
-  background: linear-gradient(5deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  background: linear-gradient(170deg, #ff83dd 0%, #985ede 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  opacity: 0%;
-  transition: opacity 1.2s ease-in-out;
-  transition-delay: 4ms;
+  opacity: 0;
 }
-.menu__title span:hover .hidden {
-  opacity: 100%;
+.menu__title span:hover .fa-solid.fa-heart {
+  opacity: 1;
+  animation-name: heart-progress;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.menu__title span i {
+  font-size: 28px;
 }
 .menu__entree .plate-type {
   text-transform: uppercase;
