@@ -185,9 +185,10 @@ header{
             justify-content: space-between;
             align-items: center;
             font-size: 28px;
-            height: 30%;
-            width: 90%;
+            // height: 30%;
+            width: 95%;
             margin: 0 auto;
+            margin-top: 10px;
             h4{
                 font-size: 18px;
                 font-weight: 600;
@@ -198,13 +199,13 @@ header{
                 font-weight: 300;
             }
             span{
-                position: relative;
-                top: -5px;
-                right: -20px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                @include animation-heart;
                 i{
                     font-size: 28px;
                 }
-                @include animation-heart;
             }
         }
     }
@@ -265,21 +266,25 @@ footer{
     gap: 30px;
     &__title{
         display: flex;
-        align-items: baseline;
+        // align-items: baseline;
         justify-content: space-between;
         font-family: $font-title;
         font-size: 24px;
-        padding: 20px 0px 0px 0px;
+        margin-top: 40px;
         h1{
             font-size: 28px;
+            height: fit-content;
+            align-self: end;
         }
         span{
+            width: 30px;
             display: flex;
-            align-items: end;
+            align-items: center;
+            justify-content: end;
+            @include animation-heart;
             i{
                 font-size: 28px;
             }
-            @include animation-heart;
         }
     }
     &__entree{
