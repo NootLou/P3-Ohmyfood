@@ -1,7 +1,6 @@
 // // PAGES RESTAURANT
 
 @mixin menu-card {   
-
     .plate-type{
         text-transform: uppercase;
         font-weight: 300;
@@ -123,6 +122,19 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@mixin menu-card-pannel {
+    .plate-box{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0px;
+        row-gap: 20px;
+        figure{
+            width: 45%;
         }
     }
 }
