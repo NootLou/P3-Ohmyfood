@@ -126,7 +126,7 @@
     }
 }
 
-@mixin menu-card-pannel {
+@mixin menu-card-tablet {
     .plate-box{
         flex-direction: row;
         flex-wrap: wrap;
@@ -134,7 +134,7 @@
         gap: 0px;
         row-gap: 20px;
         figure{
-            width: 45%;
+            width: 47%;
         }
     }
 }

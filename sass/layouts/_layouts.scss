@@ -82,11 +82,14 @@ header{
     img{
         width: 45%;
     }
+    a{
+        width: fit-content;
+    }
     i{
         position: absolute;
         top: 45%;
         left: 2%;
-        padding: 0px 20px;
+        // padding: 0px 20px;
         color: lighten(black, 20%);
     }
 }
@@ -304,7 +307,7 @@ footer{
     }
 }
 
-.menu{
+.menu-container{
     background-color: $background-dark;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -316,7 +319,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    &__title{
+    .menu-title{
         display: flex;
         // align-items: baseline;
         justify-content: space-between;
@@ -339,20 +342,25 @@ footer{
             }
         }
     }
-    &__entree{
-        @include menu-card;
-    }
-    &__plate{
-        @include menu-card;
-    }
-    &__dessert{
-        @include menu-card;
-        margin-bottom: 20px;
+    .menu{
+        h2{
+            margin-top: 40px;
+        }
+        &__entree{
+            @include menu-card;
+        }
+        &__plate{
+            @include menu-card;
+        }
+        &__dessert{
+            @include menu-card;
+            margin-bottom: 20px;
+        }
     }
 }
 
 // TABLETTES & DESKTOP
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) and (max-width: 998px){
     // ACCUEIL
     header{
         img{
@@ -413,17 +421,97 @@ footer{
     }
 
     // PAGES RESTAURANT
-    .menu{
-        &__entree{
-            @include menu-card-pannel;
-        }
-        &__plate{
-            @include menu-card-pannel;
-        }
-        &__dessert{
-            @include menu-card-pannel;
+    .menu-container{
+        .menu{
+            &__entree{
+                @include menu-card-tablet;
+            }
+            &__plate{
+                @include menu-card-tablet;
+            }
+            &__dessert{
+                @include menu-card-tablet;
+            }
         }
     }
 }
 
+// DESKTOP
+@media only screen and (min-width: 998px) {
+     // ACCUEIL
+     header{
+        img{
+            width: 20%;
+        }
+    }
 
+    .functioning{
+        div{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &__card{
+            margin: 0px;
+            figcaption{
+                font-size: 14px;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .restaurant{
+        &__container{
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            // .restaurant-card{
+            //     &__infos{
+            //         padding-left: 20px;
+            //     }
+            // }
+        }
+        a{
+            width: 45%;
+        }
+    }
+
+    footer{
+        .footer__title{
+            font-size: 28px;
+            text-align: center;
+        }
+        ul{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            li{
+                font-size: 18px;
+            }
+        }
+    }
+    
+    // PAGE RESTAURANT
+    .menu-container{
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            &__entree{
+                width: 30%;
+            }
+            &__plate{
+                width: 30%;
+            }
+            &__dessert{
+                width: 30%;
+            }
+        }
+    }
+}

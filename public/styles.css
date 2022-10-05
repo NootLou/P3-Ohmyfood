@@ -248,11 +248,13 @@ header {
 header img {
   width: 45%;
 }
+header a {
+  width: fit-content;
+}
 header i {
   position: absolute;
   top: 45%;
   left: 2%;
-  padding: 0px 20px;
   color: #333333;
 }
 
@@ -486,7 +488,7 @@ footer ul li i {
   object-fit: cover;
 }
 
-.menu {
+.menu-container {
   background-color: whitesmoke;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -499,30 +501,30 @@ footer ul li i {
   flex-direction: column;
   gap: 30px;
 }
-.menu__title {
+.menu-container .menu-title {
   display: flex;
   justify-content: space-between;
   font-family: "Shrikhand", sans-serif;
   font-size: 24px;
   margin-top: 40px;
 }
-.menu__title h1 {
+.menu-container .menu-title h1 {
   font-size: 28px;
   height: fit-content;
   align-self: end;
 }
-.menu__title span {
+.menu-container .menu-title span {
   width: 30px;
   display: flex;
   align-items: center;
   justify-content: end;
 }
-.menu__title span i {
+.menu-container .menu-title span i {
   display: flex;
   align-items: center;
   height: 23px;
 }
-.menu__title span .fa-solid.fa-heart {
+.menu-container .menu-title span .fa-solid.fa-heart {
   background: rgb(255, 121, 218);
   background: linear-gradient(170deg, #ff83dd 0%, #985ede 100%);
   background-clip: text;
@@ -530,61 +532,64 @@ footer ul li i {
   color: transparent;
   opacity: 0;
 }
-.menu__title span:hover .fa-solid.fa-heart {
+.menu-container .menu-title span:hover .fa-solid.fa-heart {
   transform-origin: bottom center;
   opacity: 1;
   animation-name: heart-progress;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
-.menu__title span i {
+.menu-container .menu-title span i {
   font-size: 28px;
 }
-.menu__entree .plate-type {
+.menu-container .menu h2 {
+  margin-top: 40px;
+}
+.menu-container .menu__entree .plate-type {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 18px;
   padding: 10px 0px;
   margin-bottom: 25px;
 }
-.menu__entree .plate-type span {
+.menu-container .menu__entree .plate-type span {
   border-bottom: 4px solid #99E2D0;
   padding: 10px 0px;
 }
-.menu__entree .plate-box {
+.menu-container .menu__entree .plate-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.menu__entree .plate-box figure:nth-child(1) {
+.menu-container .menu__entree .plate-box figure:nth-child(1) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-1;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__entree .plate-box figure:nth-child(2) {
+.menu-container .menu__entree .plate-box figure:nth-child(2) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-2;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__entree .plate-box figure:nth-child(3) {
+.menu-container .menu__entree .plate-box figure:nth-child(3) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-3;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__entree .plate-box figure:nth-child(4) {
+.menu-container .menu__entree .plate-box figure:nth-child(4) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-4;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__entree .plate-box figure {
+.menu-container .menu__entree .plate-box figure {
   background-color: white;
   border-radius: 20px;
   height: 80px;
@@ -597,7 +602,7 @@ footer ul li i {
   box-shadow: 0px 5px 15px rgb(221, 221, 221);
   overflow: hidden;
 }
-.menu__entree .plate-box figure .plate {
+.menu-container .menu__entree .plate-box figure .plate {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -605,20 +610,20 @@ footer ul li i {
   transition-delay: 4ms;
   padding: 0px;
 }
-.menu__entree .plate-box figure .plate__infos {
+.menu-container .menu__entree .plate-box figure .plate__infos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   min-width: 80%;
 }
-.menu__entree .plate-box figure .plate__infos h3 {
+.menu-container .menu__entree .plate-box figure .plate__infos h3 {
   font-weight: 500;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__entree .plate-box figure .plate__infos p {
+.menu-container .menu__entree .plate-box figure .plate__infos p {
   font-weight: 300;
   margin-top: 5px;
   white-space: nowrap;
@@ -627,13 +632,13 @@ footer ul li i {
   transition: width 1.2s ease-out;
   transition-delay: 4ms;
 }
-.menu__entree .plate-box figure .plate span {
+.menu-container .menu__entree .plate-box figure .plate span {
   margin-top: 8px;
   padding-right: 20px;
   padding-left: 10px;
   font-weight: 500;
 }
-.menu__entree .plate-box figure .plate__check {
+.menu-container .menu__entree .plate-box figure .plate__check {
   width: 0%;
   height: 100%;
   display: flex;
@@ -644,68 +649,68 @@ footer ul li i {
   transition: all 0.8s ease-out;
   transition-delay: 2ms;
 }
-.menu__entree .plate-box figure .plate__check i {
+.menu-container .menu__entree .plate-box figure .plate__check i {
   color: white;
   height: fit-content;
   width: fit-content;
   padding: 20px;
 }
-.menu__entree .plate-box figure:hover .plate {
+.menu-container .menu__entree .plate-box figure:hover .plate {
   width: 80%;
 }
-.menu__entree .plate-box figure:hover .plate__check {
+.menu-container .menu__entree .plate-box figure:hover .plate__check {
   width: 20%;
   transform: translateX(0px);
 }
-.menu__entree .plate-box figure:hover .plate__check i {
+.menu-container .menu__entree .plate-box figure:hover .plate__check i {
   animation-name: rotate-check;
   animation-duration: 1.2s;
 }
-.menu__plate .plate-type {
+.menu-container .menu__plate .plate-type {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 18px;
   padding: 10px 0px;
   margin-bottom: 25px;
 }
-.menu__plate .plate-type span {
+.menu-container .menu__plate .plate-type span {
   border-bottom: 4px solid #99E2D0;
   padding: 10px 0px;
 }
-.menu__plate .plate-box {
+.menu-container .menu__plate .plate-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.menu__plate .plate-box figure:nth-child(1) {
+.menu-container .menu__plate .plate-box figure:nth-child(1) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-1;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__plate .plate-box figure:nth-child(2) {
+.menu-container .menu__plate .plate-box figure:nth-child(2) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-2;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__plate .plate-box figure:nth-child(3) {
+.menu-container .menu__plate .plate-box figure:nth-child(3) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-3;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__plate .plate-box figure:nth-child(4) {
+.menu-container .menu__plate .plate-box figure:nth-child(4) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-4;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__plate .plate-box figure {
+.menu-container .menu__plate .plate-box figure {
   background-color: white;
   border-radius: 20px;
   height: 80px;
@@ -718,7 +723,7 @@ footer ul li i {
   box-shadow: 0px 5px 15px rgb(221, 221, 221);
   overflow: hidden;
 }
-.menu__plate .plate-box figure .plate {
+.menu-container .menu__plate .plate-box figure .plate {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -726,20 +731,20 @@ footer ul li i {
   transition-delay: 4ms;
   padding: 0px;
 }
-.menu__plate .plate-box figure .plate__infos {
+.menu-container .menu__plate .plate-box figure .plate__infos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   min-width: 80%;
 }
-.menu__plate .plate-box figure .plate__infos h3 {
+.menu-container .menu__plate .plate-box figure .plate__infos h3 {
   font-weight: 500;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__plate .plate-box figure .plate__infos p {
+.menu-container .menu__plate .plate-box figure .plate__infos p {
   font-weight: 300;
   margin-top: 5px;
   white-space: nowrap;
@@ -748,13 +753,13 @@ footer ul li i {
   transition: width 1.2s ease-out;
   transition-delay: 4ms;
 }
-.menu__plate .plate-box figure .plate span {
+.menu-container .menu__plate .plate-box figure .plate span {
   margin-top: 8px;
   padding-right: 20px;
   padding-left: 10px;
   font-weight: 500;
 }
-.menu__plate .plate-box figure .plate__check {
+.menu-container .menu__plate .plate-box figure .plate__check {
   width: 0%;
   height: 100%;
   display: flex;
@@ -765,71 +770,71 @@ footer ul li i {
   transition: all 0.8s ease-out;
   transition-delay: 2ms;
 }
-.menu__plate .plate-box figure .plate__check i {
+.menu-container .menu__plate .plate-box figure .plate__check i {
   color: white;
   height: fit-content;
   width: fit-content;
   padding: 20px;
 }
-.menu__plate .plate-box figure:hover .plate {
+.menu-container .menu__plate .plate-box figure:hover .plate {
   width: 80%;
 }
-.menu__plate .plate-box figure:hover .plate__check {
+.menu-container .menu__plate .plate-box figure:hover .plate__check {
   width: 20%;
   transform: translateX(0px);
 }
-.menu__plate .plate-box figure:hover .plate__check i {
+.menu-container .menu__plate .plate-box figure:hover .plate__check i {
   animation-name: rotate-check;
   animation-duration: 1.2s;
 }
-.menu__dessert {
+.menu-container .menu__dessert {
   margin-bottom: 20px;
 }
-.menu__dessert .plate-type {
+.menu-container .menu__dessert .plate-type {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 18px;
   padding: 10px 0px;
   margin-bottom: 25px;
 }
-.menu__dessert .plate-type span {
+.menu-container .menu__dessert .plate-type span {
   border-bottom: 4px solid #99E2D0;
   padding: 10px 0px;
 }
-.menu__dessert .plate-box {
+.menu-container .menu__dessert .plate-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.menu__dessert .plate-box figure:nth-child(1) {
+.menu-container .menu__dessert .plate-box figure:nth-child(1) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-1;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__dessert .plate-box figure:nth-child(2) {
+.menu-container .menu__dessert .plate-box figure:nth-child(2) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-2;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__dessert .plate-box figure:nth-child(3) {
+.menu-container .menu__dessert .plate-box figure:nth-child(3) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-3;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__dessert .plate-box figure:nth-child(4) {
+.menu-container .menu__dessert .plate-box figure:nth-child(4) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-4;
   animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
-.menu__dessert .plate-box figure {
+.menu-container .menu__dessert .plate-box figure {
   background-color: white;
   border-radius: 20px;
   height: 80px;
@@ -842,7 +847,7 @@ footer ul li i {
   box-shadow: 0px 5px 15px rgb(221, 221, 221);
   overflow: hidden;
 }
-.menu__dessert .plate-box figure .plate {
+.menu-container .menu__dessert .plate-box figure .plate {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -850,20 +855,20 @@ footer ul li i {
   transition-delay: 4ms;
   padding: 0px;
 }
-.menu__dessert .plate-box figure .plate__infos {
+.menu-container .menu__dessert .plate-box figure .plate__infos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   min-width: 80%;
 }
-.menu__dessert .plate-box figure .plate__infos h3 {
+.menu-container .menu__dessert .plate-box figure .plate__infos h3 {
   font-weight: 500;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__dessert .plate-box figure .plate__infos p {
+.menu-container .menu__dessert .plate-box figure .plate__infos p {
   font-weight: 300;
   margin-top: 5px;
   white-space: nowrap;
@@ -872,13 +877,13 @@ footer ul li i {
   transition: width 1.2s ease-out;
   transition-delay: 4ms;
 }
-.menu__dessert .plate-box figure .plate span {
+.menu-container .menu__dessert .plate-box figure .plate span {
   margin-top: 8px;
   padding-right: 20px;
   padding-left: 10px;
   font-weight: 500;
 }
-.menu__dessert .plate-box figure .plate__check {
+.menu-container .menu__dessert .plate-box figure .plate__check {
   width: 0%;
   height: 100%;
   display: flex;
@@ -889,25 +894,25 @@ footer ul li i {
   transition: all 0.8s ease-out;
   transition-delay: 2ms;
 }
-.menu__dessert .plate-box figure .plate__check i {
+.menu-container .menu__dessert .plate-box figure .plate__check i {
   color: white;
   height: fit-content;
   width: fit-content;
   padding: 20px;
 }
-.menu__dessert .plate-box figure:hover .plate {
+.menu-container .menu__dessert .plate-box figure:hover .plate {
   width: 80%;
 }
-.menu__dessert .plate-box figure:hover .plate__check {
+.menu-container .menu__dessert .plate-box figure:hover .plate__check {
   width: 20%;
   transform: translateX(0px);
 }
-.menu__dessert .plate-box figure:hover .plate__check i {
+.menu-container .menu__dessert .plate-box figure:hover .plate__check i {
   animation-name: rotate-check;
   animation-duration: 1.2s;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 998px) {
   header img {
     width: 20%;
   }
@@ -949,35 +954,92 @@ footer ul li i {
   footer ul li {
     font-size: 18px;
   }
-  .menu__entree .plate-box {
+  .menu-container .menu__entree .plate-box {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 0px;
     row-gap: 20px;
   }
-  .menu__entree .plate-box figure {
-    width: 45%;
+  .menu-container .menu__entree .plate-box figure {
+    width: 47%;
   }
-  .menu__plate .plate-box {
+  .menu-container .menu__plate .plate-box {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 0px;
     row-gap: 20px;
   }
-  .menu__plate .plate-box figure {
-    width: 45%;
+  .menu-container .menu__plate .plate-box figure {
+    width: 47%;
   }
-  .menu__dessert .plate-box {
+  .menu-container .menu__dessert .plate-box {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 0px;
     row-gap: 20px;
   }
-  .menu__dessert .plate-box figure {
+  .menu-container .menu__dessert .plate-box figure {
+    width: 47%;
+  }
+}
+@media only screen and (min-width: 998px) {
+  header img {
+    width: 20%;
+  }
+  .functioning div {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .functioning__card {
+    margin: 0px;
+  }
+  .functioning__card figcaption {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  .restaurant__container {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .restaurant a {
     width: 45%;
+  }
+  footer .footer__title {
+    font-size: 28px;
+    text-align: center;
+  }
+  footer ul {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  footer ul li {
+    font-size: 18px;
+  }
+  .menu-container .menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .menu-container .menu__entree {
+    width: 30%;
+  }
+  .menu-container .menu__plate {
+    width: 30%;
+  }
+  .menu-container .menu__dessert {
+    width: 30%;
   }
 }
 
