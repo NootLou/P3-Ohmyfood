@@ -8,14 +8,6 @@
     z-index: 2;
   }
 }
-@keyframes loader-spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(1080deg);
-  }
-}
 @keyframes egg1 {
   0% {
     transform: scale(1, 1);
@@ -447,7 +439,7 @@ header i {
   transform-origin: bottom center;
   opacity: 1;
   animation-name: heart-progress;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
 .restaurant-card__infos span i {
@@ -541,7 +533,7 @@ footer ul li i {
   transform-origin: bottom center;
   opacity: 1;
   animation-name: heart-progress;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
 .menu__title span i {
@@ -566,28 +558,28 @@ footer ul li i {
 .menu__entree .plate-box figure:nth-child(1) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-1;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
 .menu__entree .plate-box figure:nth-child(2) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-2;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
 .menu__entree .plate-box figure:nth-child(3) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-3;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
 .menu__entree .plate-box figure:nth-child(4) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-4;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
@@ -687,28 +679,28 @@ footer ul li i {
 .menu__plate .plate-box figure:nth-child(1) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-1;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
 .menu__plate .plate-box figure:nth-child(2) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-2;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
 .menu__plate .plate-box figure:nth-child(3) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-3;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
 .menu__plate .plate-box figure:nth-child(4) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-4;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
@@ -811,28 +803,28 @@ footer ul li i {
 .menu__dessert .plate-box figure:nth-child(1) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-1;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
 .menu__dessert .plate-box figure:nth-child(2) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-2;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
 .menu__dessert .plate-box figure:nth-child(3) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-3;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }
 .menu__dessert .plate-box figure:nth-child(4) {
   transform-origin: 50% 0%;
   animation-name: apparition-card-4;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 400ms;
   animation-timing-function: ease-in-out;
 }

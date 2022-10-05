@@ -10,15 +10,6 @@
     }
 }
 
-@keyframes loader-spinner{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(1080deg);
-    }
-}
-
 @keyframes egg1 {
     0%{
         transform: scale(1,1);
