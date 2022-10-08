@@ -127,12 +127,7 @@ body {
   width: 100%;
 }
 
-a {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-a .btn {
+.btn {
   width: 55%;
   margin: 0 auto;
   padding: 0px 10px;
@@ -147,10 +142,10 @@ a .btn {
   position: relative;
   z-index: 1;
 }
-a .btn:hover::after {
+.btn:hover::after {
   opacity: 1;
 }
-a .btn::after {
+.btn::after {
   content: "";
   position: absolute;
   top: 0px;
